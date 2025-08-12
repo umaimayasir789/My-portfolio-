@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omaima Yasir - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-header">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="gradient-text">Omaima Yasir</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#education" class="mobile-nav-link">Education</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title gradient-text animate-fadeInUp">Omaima Yasir</h1>
+            <h2 class="hero-subtitle animate-slideInLeft">Software Engineer Undergraduate</h2>
+            <p class="hero-description animate-slideInRight">
+                Passionate about innovation and technology, I'm dedicated to creating impactful solutions 
+                through code. Currently pursuing my BS in Software Engineering, I combine creativity 
+                with technical expertise to build the future.
+            </p>
+            <div class="hero-buttons animate-fadeInUp">
+                <a href="#projects" class="btn-glass">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title gradient-text animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-card glass-card animate-slideInLeft">
+                    <div class="profile-image-container">
+                        <div class="profile-image floating-animation">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm Omaima Yasir, a dedicated Software Engineering undergraduate with a passion for 
+                            creating innovative digital solutions. My journey in technology began with curiosity 
+                            about how things work, and has evolved into a commitment to building applications 
+                            that make a difference.
+                        </p>
+                        <p>
+                            Currently in my third year of BS Software Engineering (2022-2026), I've developed 
+                            expertise in multiple programming languages and technologies. I believe in the power 
+                            of clean code, user-centered design, and continuous learning to solve real-world problems.
+                        </p>
+                        <p>
+                            When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
+                            projects, and sharing knowledge with fellow developers. I'm always excited to take 
+                            on new challenges and collaborate on meaningful projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title gradient-text animate-on-scroll">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Databases -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQLite3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter Notebook</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title gradient-text animate-on-scroll">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="project-title">Website Design Portfolio</h3>
+                    <p class="project-description">
+                        A collection of responsive website designs built with HTML and CSS, 
+                        featuring modern layouts and interactive elements.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="project-title">Doppelganger GUI Application</h3>
+                    <p class="project-description">
+                        A Python-based GUI application with an intuitive interface, 
+                        demonstrating advanced GUI programming concepts and user experience design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="project-title">Movie Planner Website</h3>
+                    <p class="project-description">
+                        A dynamic web application for planning and organizing movie collections, 
+                        featuring search functionality and user-friendly interface.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Database</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <h3 class="project-title">Interactive Classroom Polling App</h3>
+                    <p class="project-description">
+                        Designed a C++ prototype for real-time classroom engagement, 
+                        focusing on system architecture and user flow optimization.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">System Design</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="project-title">Mobile App Development</h3>
+                    <p class="project-description">
+                        Mobile application development using XML for layout design and 
+                        JavaScript for interactive functionality and user experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">XML</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Mobile UI</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="project-title">Open Source Contributions</h3>
+                    <p class="project-description">
+                        Various contributions to open-source projects, showcasing collaborative 
+                        development skills and commitment to the developer community.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Collaboration</span>
+                        <span class="tech-tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title gradient-text animate-on-scroll">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item glass-card animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="education-period">2022 - 2026</div>
+                        <h3 class="education-title">Bachelor of Science in Software Engineering</h3>
+                        <div class="education-institution">University</div>
+                        <p class="education-description">
+                            Currently pursuing a comprehensive degree in Software Engineering, focusing on 
+                            modern development practices, system design, and emerging technologies. 
+                            Maintaining strong academic performance while engaging in practical projects 
+                            and collaborative learning experiences.
+                        </p>
+                        <div class="education-highlights">
+                            <span class="highlight-tag">Object-Oriented Programming</span>
+                            <span class="highlight-tag">Data Structures</span>
+                            <span class="highlight-tag">Web Development</span>
+                            <span class="highlight-tag">Database Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title gradient-text animate-on-scroll">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass-card animate-slideInLeft">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:umaimamunam@gmail.com">umaimamunam@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+923154229976">+92 315 422 9976</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span>Pakistan</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/omaima-yasir-4ba08a376" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/umaimayasir789" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-card animate-slideInRight" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-glass">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Omaima Yasir. All rights reserved.</p>
+                <p class="footer-philosophy">
+                    Crafted with passion, designed for impact, built to inspire.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
